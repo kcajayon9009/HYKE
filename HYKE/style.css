@@ -1,0 +1,1031 @@
+/* =========================================================
+   YOU KENN EAT HERE!
+   Main CSS
+   ========================================================= */
+
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #1c1c1c;
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+
+/* =========================
+   PHONE
+   ========================= */
+
+.phone {
+    position: relative;
+
+    width: 335px;
+    height: 724px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LOGO STYLES
+   ========================= */
+
+.brand {
+    position: absolute;
+
+    top: 38px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 280px;
+
+    z-index: 10;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 15px 20px;
+    
+    background: linear-gradient(135deg, #ED6500 0%, #FF8C38 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(237, 101, 0, 0.35);
+    
+    font-family: "Times New Roman", Georgia, serif;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.logo-line {
+    display: block;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-line.highlight {
+    color: #FFD700;
+    font-size: 34px;
+    letter-spacing: 6px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 2px 0;
+}
+
+/* Home page logo - slightly smaller */
+.home .brand {
+    top: 67px;
+    width: 260px;
+}
+
+.home .logo-wrapper {
+    padding: 12px 16px;
+}
+
+.home .logo-line {
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.home .logo-line.highlight {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login-body {
+    position: absolute;
+
+    top: 220px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 248px;
+
+    text-align: center;
+}
+
+.login-body h2 {
+    margin-bottom: 38px;
+
+    color: #17277f;
+
+    font-size: 42px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   FORM FIELDS
+   ========================= */
+
+.field {
+    position: relative;
+
+    margin-bottom: 31px;
+}
+
+.field input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 42px 0 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #d9d9d9;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 20px;
+
+    color: #333;
+
+    outline: none;
+}
+
+.field input::placeholder {
+    color: #5d5d5d;
+}
+
+
+/* Input icons */
+
+.field .icon {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+.btn-primary {
+    display: block;
+
+    width: 200px;
+    height: 24px;
+
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #4144e8;
+
+    color: #ffffff;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   LOGIN SIGNUP LINK
+   ========================= */
+
+.login-footer {
+    position: absolute;
+
+    top: 540px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #222;
+
+    font-size: 19px;
+}
+
+.login-footer a {
+    color: #ed6500;
+
+    font-size: 23px;
+
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   HYKE FOOTER
+   ========================================================= */
+
+.hyke {
+    position: absolute;
+
+    bottom: 8px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    z-index: 20;
+}
+
+.hyke-box {
+    position: relative;
+
+    width: 70px;
+
+    margin: 0 auto;
+}
+
+.hyke-box img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* Invisible clickable areas */
+
+.hyke .soc {
+    position: absolute;
+
+    top: 67%;
+
+    width: 13%;
+    height: 20%;
+
+    border-radius: 50%;
+}
+
+.hyke .soc-fb {
+    left: 25.4%;
+}
+
+.hyke .soc-ig {
+    left: 44.2%;
+}
+
+.hyke .soc-tw {
+    left: 62.9%;
+}
+
+
+/* =========================================================
+   SIGN UP
+   ========================================================= */
+
+.signup-head {
+    position: absolute;
+
+    top: 160px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.signup-head h2 {
+    color: #ed6500;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.signup-head p {
+    margin-top: 6px;
+
+    color: #333;
+
+    font-size: 12px;
+}
+
+.signup-head p a {
+    margin-left: 4px;
+
+    color: #17277f;
+
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+.signup-head p a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SIGNUP FORM
+   ========================= */
+
+.signup-body {
+    position: absolute;
+
+    top: 235px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 225px;
+
+    text-align: center;
+}
+
+.signup-body .creating {
+    margin-bottom: 7px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+.signup-body .field {
+    margin-bottom: 10px;
+}
+
+.signup-body .field input {
+    width: 225px;
+    height: 27px;
+
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #d9d9d9;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 14px;
+}
+
+.signup-body .field .icon {
+    right: 9px;
+
+    font-size: 15px;
+}
+
+
+/* Signup button */
+
+.btn-signup {
+    display: block;
+
+    width: 165px;
+    height: 26px;
+
+    margin: 52px auto 0;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ed6500;
+
+    color: #ffffff;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   GOOGLE / FACEBOOK
+   ========================= */
+
+.or {
+    margin: 36px 0 20px;
+
+    color: #222;
+
+    font-size: 18px;
+}
+
+.social-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 20px;
+
+    margin: 0 auto 8px;
+
+    border: 1px solid #999;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background: #f3f3f3;
+}
+
+.social-btn .g {
+    margin-right: 8px;
+
+    color: #4285f4;
+
+    font-weight: bold;
+}
+
+.social-btn .f {
+    margin-right: 8px;
+
+    color: #1877f2;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   HOME
+   ========================================================= */
+
+.home {
+    position: relative;
+
+    width: 335px;
+    height: 724px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   FOOD CIRCLES
+   ========================= */
+
+.food {
+    position: absolute;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    z-index: 0;
+}
+
+.food img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Top-left */
+
+.food1 {
+    top: -42px;
+    left: -48px;
+
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Top-right */
+
+.food2 {
+    top: 155px;
+    right: -58px;
+
+    width: 155px;
+    height: 155px;
+}
+
+
+/* Middle-left */
+
+.food3 {
+    top: 285px;
+    left: -52px;
+
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Middle-right */
+
+.food4 {
+    top: 425px;
+    right: -55px;
+
+    width: 155px;
+    height: 155px;
+}
+
+
+/* Bottom-left */
+
+.food5 {
+    bottom: -52px;
+    left: -50px;
+
+    width: 160px;
+    height: 160px;
+}
+
+
+/* =========================
+   HOME CONTENT
+   ========================= */
+
+.home-content {
+    position: absolute;
+
+    top: 195px;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 5;
+
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+
+/* Buttons */
+
+.chip {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 175px;
+    height: 25px;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.chip:hover {
+    opacity: 0.85;
+}
+
+
+/* Orange */
+
+.chip-orange {
+    background: #dfa078;
+
+    color: #ffffff;
+}
+
+
+/* Green */
+
+.chip-green {
+    margin-top: 28px;
+
+    background: #79b33c;
+
+    color: #ffffff;
+}
+
+
+/* Violet */
+
+.chip-violet {
+    margin-top: 28px;
+
+    background: #d48ad9;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   HOME DESCRIPTION
+   ========================= */
+
+.home-note {
+    width: 225px;
+
+    margin: 7px auto 0;
+
+    font-size: 8px;
+
+    line-height: 11px;
+
+    font-weight: bold;
+}
+
+.note-orange {
+    color: #ed6500;
+}
+
+.note-green {
+    color: #65a72c;
+}
+
+.note-violet {
+    color: #d477d9;
+}
+
+
+/* =========================================================
+   OVERVIEW
+   ========================================================= */
+
+body:has(.overview-stage) {
+    background: #1c1c1c;
+
+    min-height: 100vh;
+
+    padding: 0;
+}
+
+
+/* Overview title */
+
+body:has(.overview-stage) > h1 {
+    margin: 68px 0 18px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+}
+
+
+/* Three-panel GRID */
+
+.overview-stage {
+    display: grid;
+
+    grid-template-columns: repeat(3, 335px);
+
+    justify-content: center;
+
+    column-gap: 102px;
+
+    align-items: start;
+}
+
+
+/* Each panel */
+
+.overview-stage .panel {
+    width: 335px;
+}
+
+
+/* Labels */
+
+.overview-stage .label {
+    height: 22px;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    line-height: 22px;
+}
+
+
+/* Phone iframe */
+
+.overview-stage iframe {
+    display: block;
+
+    width: 335px;
+    height: 724px;
+
+    border: none;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+.menu-page {
+    position: relative;
+
+    width: 335px;
+    min-height: 724px;
+
+    padding-bottom: 30px;
+
+    background: #ffffff;
+}
+
+
+/* Menu header */
+
+.menu-page .brand {
+    position: relative;
+
+    top: auto;
+    left: auto;
+
+    transform: none;
+
+    width: 300px;
+
+    margin: 0 auto;
+
+    padding-top: 20px;
+}
+
+.menu-page .logo-wrapper {
+    padding: 12px 18px;
+}
+
+.menu-page .logo-line {
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.menu-page .logo-line.highlight {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+
+/* Menu title */
+
+.menu-title {
+    margin: 8px 12px 12px;
+
+    color: #ed6500;
+
+    text-align: center;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* Day titles */
+
+.menu-day-heading {
+    margin: 13px 0 7px;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.head-mon {
+    color: #4f9e2f;
+}
+
+.head-tue {
+    color: #d9a400;
+}
+
+.head-wed {
+    color: #2f6fd6;
+}
+
+.head-thu {
+    color: #e8641b;
+}
+
+.head-fri {
+    color: #c26ee0;
+}
+
+.head-sat {
+    color: #d61f26;
+}
+
+
+/* Menu row */
+
+.menu-band {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 6px;
+
+    margin: 0 8px;
+
+    padding: 8px;
+
+    border-radius: 4px;
+}
+
+
+/* Row colors */
+
+.band-mon {
+    background: #dff0d0;
+}
+
+.band-tue {
+    background: #f9f0d3;
+}
+
+.band-wed {
+    background: #d6e6f7;
+}
+
+.band-thu {
+    background: #fbe3d2;
+}
+
+.band-fri {
+    background: #efe0f7;
+}
+
+.band-sat {
+    background: #fadadb;
+}
+
+
+/* Dish */
+
+.dish {
+    text-align: center;
+}
+
+.dish .photo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    font-size: 25px;
+}
+
+.dish .name {
+    margin-top: 4px;
+
+    color: #7a4033;
+
+    font-size: 7px;
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+}
+
+
+/* Back button */
+
+.back-home {
+    display: block;
+
+    margin: 18px auto;
+
+    color: #17277f;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+
+/* Menu footer */
+
+.menu-page .hyke {
+    position: relative;
+
+    bottom: auto;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1150px) {
+
+    .overview-stage {
+        grid-template-columns: repeat(2, 335px);
+
+        row-gap: 25px;
+
+        column-gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .overview-stage {
+        grid-template-columns: 335px;
+
+        row-gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+
+    .phone,
+    .home,
+    .menu-page {
+        width: 100%;
+    }
+
+    .overview-stage iframe {
+        width: 100%;
+    }
+
+}
